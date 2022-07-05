@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
 //1.way:--Render Multiple element inside ReacDom.render()
 ReactDOM.render(
@@ -81,5 +82,18 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+//Add CSS using external & inline CSS
+ReactDOM.render(
+  <>
+    <h1 className="heading">My name is shobhna</h1>
+    <h1 style={{ color: "blue", textTransform: "capitalize", textAlign: "center" }}>My last name is baraiya</h1>
+    <div className="my_img">
+      <img src="https://picsum.photos/200/300" alt="not found" />
+      <img src="https://picsum.photos/220/300" alt="not found" />
+      <img src="https://picsum.photos/250/300" alt="not found" />
+    </div>
+  </>,
+  document.getElementById("root")
+);
 
 
