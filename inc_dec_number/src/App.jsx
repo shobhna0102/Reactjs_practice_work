@@ -31,10 +31,10 @@ const App = () => {
           <h1>{count}</h1>
           <div className='btn_div'>
             <Tooltip title="Icnreament">
-              <Button onClick={incNum}><RemoveIcon /></Button>
+              <Button onClick={decNum}><RemoveIcon /></Button>
             </Tooltip>
             <Tooltip title="Decreament">
-              <Button onClick={decNum}><AddIcon /></Button>
+              <Button onClick={incNum}><AddIcon /></Button>
             </Tooltip>
           </div>
         </div>
