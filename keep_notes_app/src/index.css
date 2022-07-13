@@ -1,0 +1,134 @@
+/* * {
+  box-sizing:  border-box;
+  padding: 0;
+  margin: 0;
+} */
+.header {
+  width: 100%;
+  line-height: 100%;
+  background-color: #f5ba13;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.main_note {
+  width: 300px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+}
+.display {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+}
+
+.note {
+  box-sizing: border-box;
+  width: 150px;
+  margin: 20px auto;
+  min-height: 30px;
+  color: #374649;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.my_notes h1 {
+  color: #34495e;
+}
+.my_notes p {
+  color: grey;
+}
+.note .btn:hover {
+  background-color: #fff;
+}
+.deleteIcon {
+  width: 0.7em;
+  height: 00.7em;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  margin-bottom: 50%;
+}
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f4b400;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px -10px rgba(0, 0, 0, 0.3);
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.muiButton-root {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 400px;
+  cursor: pointer;
+  background-color: #fff !important;
+}
+textarea {
+  width: 100px;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.muiButton-root .plus_sign {
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #f4b400;
+  cursor: pointer;
+  z-index: 100;
+  background: transparent;
+}
+.muiButton-root:hover {
+  background: #f4b400 !important;
+}
+.muiButton-root:hover.plus_sign {
+  color: #fff;
+  background: transparent;
+}
+.note {
+  background: #fff;
+}
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+form {
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}

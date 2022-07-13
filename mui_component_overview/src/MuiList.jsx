@@ -11,46 +11,44 @@ const MuiList = () => {
     };
 
     const listOfItems = () => {
-        setNewItem((prevValue) => {
-            return [...prevValue, item];
-        });
+        setNewItem((prevValue) => { [...prevValue, item] });
 
         setItem("");
     };
 
     return (
-        <>
-            <div className="main_div">
-                <div className="center_div">
-                    <br />
 
-                    <h1> ToDo List </h1>
+        <div className="main_div">
+            <div className="center_div">
+                <br />
 
-                    <br />
+                <h1> ToDo List </h1>
 
-                    <input
-                        type="text"
-                        value={item}
-                        placeholder="Add an Items"
-                        onChange={itemEvent}
-                    />
+                <br />
 
-                    <Button className="newBtn" onClick={listOfItems}>
-                        <AddIcon />
-                    </Button>
+                <input
+                    type="text"
+                    value={item}
+                    placeholder="Add an Items"
+                    onChange={itemEvent}
+                />
 
-                    <br />
+                <Button className="newBtn" onClick={listOfItems}>
+                    <AddIcon />
+                </Button>
 
-                    <ol>
-                        {newitem.map((val, index) => {
-                            return <ListCom key={index} text={val} />;
-                        })}
-                    </ol>
+                <br />
 
-                    <br />
-                </div>
+                <ol>
+                    {newitem.map((val, index) => {
+                        return <ListCom key={index} text={val} />;
+                    })}
+                </ol>
+
+                <br />
             </div>
-        </>
+        </div>
+
     );
 };
 export default MuiList;
