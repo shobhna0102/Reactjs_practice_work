@@ -1,0 +1,11 @@
+.active-link {
+  color: blue;
+  border-bottom: 1px solid red;
+}
+.menu_style {
+  width: 100%;
+  line-height: 60px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+}

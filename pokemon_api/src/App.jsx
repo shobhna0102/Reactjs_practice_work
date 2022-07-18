@@ -9,10 +9,10 @@ const App = () => {
 
   useEffect(() => {
     async function getData() {
-      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
+      const res = await axios.get(` https://pokeapi.co/api/v2/pokemon/${num}`);
       console.log(res.data.name);
-      setName()
-      setMove()
+      setName(res.data.name);
+      setMove(res.data.moves.length);
     }
     getData();
 
@@ -21,6 +21,9 @@ const App = () => {
   return (
     <>
       <h1>you choose <span style={{ color: 'red' }} >{num} </span> </h1>,
+      <h1>Myname is <span style={{ color: 'red' }} >{name} </span> </h1>,
+      <h1>I have<span style={{ color: 'red' }} >{moves} </span> </h1>,
+
 
       <select value={num} onChange={(event) => {
         setNum(event.target.value);
