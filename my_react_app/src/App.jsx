@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import Home from './Home';
 import Contact from './contact';
 import Service from './Service';
 import About from './About';
 import Navbar from './Navbar';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+
 
 import { Route, Routes } from 'react-router-dom';
 const App = () => {
