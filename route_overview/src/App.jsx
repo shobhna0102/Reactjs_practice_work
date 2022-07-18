@@ -4,15 +4,19 @@ import { Route, Routes } from 'react-router-dom'
 import About from './About';
 import Contact from './Contact';
 import Error from './Error';
-import Manu from './Manu';
+import Menu from './Menu';
+import User from './User';
+import Service from './Service';
 
 const App = () => {
   return (
     <>
-      <Manu />
+      <Menu />
       <Routes>
-        <Route exact path='/' element={<About />} />
-        <Route exact path='/contact' element={<Contact />} />
+        <Route path='/' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/user/:fname' element={<User />} />
+        <Route path='/service' element={<Service />} />
         <Route element={<Error />} />
       </Routes>
     </>

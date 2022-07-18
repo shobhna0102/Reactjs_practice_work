@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: muli;
+}
+.navbar {
+  background-color: #fff imo !important;
+}
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+.navbar a:hover {
+  color: #3498bd !important;
+}
+.brand-name {
+  color: #3498bd !important;
+}
