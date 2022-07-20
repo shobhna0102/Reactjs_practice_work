@@ -1,8 +1,6 @@
 import React from "react";
 import web from '../src/images/home1.jpg'
 import Component from "./Component";
-Component
-
 const Home = () => {
     return (
         <>
@@ -14,5 +12,6 @@ const Home = () => {
         </>
     );
 };
+
 
 export default Home;
