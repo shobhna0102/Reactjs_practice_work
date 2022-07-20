@@ -12,6 +12,8 @@ import Footer from './Footer';
 
 import { Route, Routes } from 'react-router-dom';
 const App = () => {
+
+
   return (
     <>
       <Navbar />
@@ -28,3 +30,5 @@ const App = () => {
 }
 
 export default App;
+
+
