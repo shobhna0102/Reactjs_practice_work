@@ -87,15 +87,18 @@ input:focus {
   cursor: pointer;
   pointer-events: auto;
   z-index: 10;
-  background-color: #fff;
+
   background-image: none;
-  color: #666;
+  color: rgb(12, 10, 10);
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
   font-size: 2rem;
 }
 .fa:hover {
   color: rgb(47, 214, 122);
+}
+.fa-trash:hover {
+  color: rgb(223, 8, 72);
 }
 
 .fa-plus:before {
