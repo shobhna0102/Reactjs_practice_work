@@ -28,7 +28,6 @@ const Navbar = () => {
                                 <ul className="navbar-nav ml-auto" >
                                     <li className="nav-item active">
                                         <NavLink className="nav-link menu_active " to="/">
-
                                             Home
                                         </NavLink>
                                     </li>
