@@ -40,7 +40,9 @@ const Testtodo = () => {
             const allInputData = {
                 id: new Date().getTime().toString(),
                 name: inputData,
+                // isChecked: false,
             };
+
             setItems([...items, allInputData]);
             setInputData("");
         }
@@ -54,11 +56,19 @@ const Testtodo = () => {
 
         setItems(updateditems);
     };
+    const handleClick = () => setToggle(!toggle)
 
-    const handleOnChange = (e) => {
-        setToggle(localStorage.getItem('checkbox'));
-        localStorage.setItem('checkbox', `${e.target.checked}`)
-    }
+    // const handleClick = (index) => {
+
+    //     const updatedTglitems = items.filter((elem) => {
+    //         return index === elem.id;
+    //     });
+    //     setToggle(updatedTglitems);
+
+    //     //setToggle(localStorage.getItem('checkbox'));
+
+    //     //localStorage.setItem('checkbox', `${e.target.checked}`)
+    // }
 
 
     // edit the item
@@ -73,7 +83,7 @@ const Testtodo = () => {
         let newEditItem = items.find((elem) => {
             return elem.id === id;
         });
-        console.log(newEditItem);
+        // console.log(newEditItem);
 
         setToggleSubmit(false);
 
@@ -91,11 +101,13 @@ const Testtodo = () => {
     useEffect(() => {
         localStorage.setItem("lists", JSON.stringify(items));
     }, [items]);
-
     // add data to localstorage with switchtoggle
-    useEffect(() => {
-        localStorage.setItem('toggle', toggle)
-    }, [toggle]);
+    // useEffect(() => {
+    //     localStorage.setItem("toggle", toggle);
+    // }, [toggle]);
+
+
+
 
     return (
         <>
@@ -136,7 +148,7 @@ const Testtodo = () => {
 
                                         <div className="toggle">
                                             <label className="switch">
-                                                <input type="checkbox" value={toggle} onChange={handleOnChange} />
+                                                <input type="checkbox" value={toggle} onClick={handleClick} />
 
                                                 <span className="slider round" />
                                             </label>
